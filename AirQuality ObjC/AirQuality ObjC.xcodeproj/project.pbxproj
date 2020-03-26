@@ -12,6 +12,15 @@
 		620C4FCB2385DBF9001500FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 620C4FCA2385DBF9001500FE /* Assets.xcassets */; };
 		620C4FCE2385DBF9001500FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 620C4FCC2385DBF9001500FE /* LaunchScreen.storyboard */; };
 		620C4FD12385DBF9001500FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 620C4FD02385DBF9001500FE /* main.m */; };
+		EB476EFE242BF1930035F4E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB476EFD242BF1930035F4E6 /* Main.storyboard */; };
+		EB476F08242BFA690035F4E6 /* HAZCityAirQuality.m in Sources */ = {isa = PBXBuildFile; fileRef = EB476F07242BFA690035F4E6 /* HAZCityAirQuality.m */; };
+		EB476F0B242C09320035F4E6 /* HAZWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = EB476F0A242C09320035F4E6 /* HAZWeather.m */; };
+		EB476F0E242C0EC20035F4E6 /* HAZPollution.m in Sources */ = {isa = PBXBuildFile; fileRef = EB476F0D242C0EC20035F4E6 /* HAZPollution.m */; };
+		EB476F11242C38CC0035F4E6 /* HAZCityAirQualityController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB476F10242C38CC0035F4E6 /* HAZCityAirQualityController.m */; };
+		EB476F1C242C588B0035F4E6 /* CountryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB476F1B242C588B0035F4E6 /* CountryListViewController.swift */; };
+		EB476F1E242C5B630035F4E6 /* StatesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB476F1D242C5B630035F4E6 /* StatesListViewController.swift */; };
+		EB476F20242C5C0D0035F4E6 /* CitiesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB476F1F242C5C0D0035F4E6 /* CitiesListViewController.swift */; };
+		EB476F22242C5D1C0035F4E6 /* CityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB476F21242C5D1C0035F4E6 /* CityDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,20 @@
 		620C4FCD2385DBF9001500FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		620C4FCF2385DBF9001500FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		620C4FD02385DBF9001500FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EB476EFD242BF1930035F4E6 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		EB476F06242BFA690035F4E6 /* HAZCityAirQuality.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HAZCityAirQuality.h; sourceTree = "<group>"; };
+		EB476F07242BFA690035F4E6 /* HAZCityAirQuality.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HAZCityAirQuality.m; sourceTree = "<group>"; };
+		EB476F09242C09320035F4E6 /* HAZWeather.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HAZWeather.h; sourceTree = "<group>"; };
+		EB476F0A242C09320035F4E6 /* HAZWeather.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HAZWeather.m; sourceTree = "<group>"; };
+		EB476F0C242C0EC20035F4E6 /* HAZPollution.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HAZPollution.h; sourceTree = "<group>"; };
+		EB476F0D242C0EC20035F4E6 /* HAZPollution.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HAZPollution.m; sourceTree = "<group>"; };
+		EB476F0F242C38CC0035F4E6 /* HAZCityAirQualityController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HAZCityAirQualityController.h; sourceTree = "<group>"; };
+		EB476F10242C38CC0035F4E6 /* HAZCityAirQualityController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HAZCityAirQualityController.m; sourceTree = "<group>"; };
+		EB476F1A242C588A0035F4E6 /* AirQuality ObjC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AirQuality ObjC-Bridging-Header.h"; sourceTree = "<group>"; };
+		EB476F1B242C588B0035F4E6 /* CountryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListViewController.swift; sourceTree = "<group>"; };
+		EB476F1D242C5B630035F4E6 /* StatesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesListViewController.swift; sourceTree = "<group>"; };
+		EB476F1F242C5C0D0035F4E6 /* CitiesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesListViewController.swift; sourceTree = "<group>"; };
+		EB476F21242C5D1C0035F4E6 /* CityDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +79,9 @@
 		620C4FBD2385DBF6001500FE /* AirQuality ObjC */ = {
 			isa = PBXGroup;
 			children = (
+				EB476F02242BF6F70035F4E6 /* Models */,
+				EB476F00242BF6EC0035F4E6 /* Controllers */,
+				EB476EFF242BF6E10035F4E6 /* Views */,
 				620C4FD72385DDA8001500FE /* Resources */,
 			);
 			path = "AirQuality ObjC";
@@ -64,6 +90,7 @@
 		620C4FD72385DDA8001500FE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EB476F1A242C588A0035F4E6 /* AirQuality ObjC-Bridging-Header.h */,
 				620C4FBE2385DBF6001500FE /* AppDelegate.h */,
 				620C4FBF2385DBF6001500FE /* AppDelegate.m */,
 				620C4FC12385DBF6001500FE /* SceneDelegate.h */,
@@ -74,6 +101,56 @@
 				620C4FD02385DBF9001500FE /* main.m */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		EB476EFF242BF6E10035F4E6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EB476F13242C527A0035F4E6 /* UI */,
+				EB476F12242C52730035F4E6 /* ViewControllers */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EB476F00242BF6EC0035F4E6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EB476F0F242C38CC0035F4E6 /* HAZCityAirQualityController.h */,
+				EB476F10242C38CC0035F4E6 /* HAZCityAirQualityController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EB476F02242BF6F70035F4E6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EB476F06242BFA690035F4E6 /* HAZCityAirQuality.h */,
+				EB476F07242BFA690035F4E6 /* HAZCityAirQuality.m */,
+				EB476F09242C09320035F4E6 /* HAZWeather.h */,
+				EB476F0A242C09320035F4E6 /* HAZWeather.m */,
+				EB476F0C242C0EC20035F4E6 /* HAZPollution.h */,
+				EB476F0D242C0EC20035F4E6 /* HAZPollution.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EB476F12242C52730035F4E6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EB476F1B242C588B0035F4E6 /* CountryListViewController.swift */,
+				EB476F1D242C5B630035F4E6 /* StatesListViewController.swift */,
+				EB476F1F242C5C0D0035F4E6 /* CitiesListViewController.swift */,
+				EB476F21242C5D1C0035F4E6 /* CityDetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EB476F13242C527A0035F4E6 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				EB476EFD242BF1930035F4E6 /* Main.storyboard */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,13 +179,13 @@
 		620C4FB32385DBF6001500FE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = DVM;
+				CLASSPREFIX = HAZ;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "RYAN GREENBURG";
 				TargetAttributes = {
 					620C4FBA2385DBF6001500FE = {
 						CreatedOnToolsVersion = 11.2.1;
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -135,6 +212,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB476EFE242BF1930035F4E6 /* Main.storyboard in Resources */,
 				620C4FCE2385DBF9001500FE /* LaunchScreen.storyboard in Resources */,
 				620C4FCB2385DBF9001500FE /* Assets.xcassets in Resources */,
 			);
@@ -148,8 +226,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				620C4FC02385DBF6001500FE /* AppDelegate.m in Sources */,
+				EB476F1C242C588B0035F4E6 /* CountryListViewController.swift in Sources */,
+				EB476F0B242C09320035F4E6 /* HAZWeather.m in Sources */,
+				EB476F22242C5D1C0035F4E6 /* CityDetailViewController.swift in Sources */,
 				620C4FD12385DBF9001500FE /* main.m in Sources */,
+				EB476F11242C38CC0035F4E6 /* HAZCityAirQualityController.m in Sources */,
 				620C4FC32385DBF6001500FE /* SceneDelegate.m in Sources */,
+				EB476F0E242C0EC20035F4E6 /* HAZPollution.m in Sources */,
+				EB476F08242BFA690035F4E6 /* HAZCityAirQuality.m in Sources */,
+				EB476F1E242C5B630035F4E6 /* StatesListViewController.swift in Sources */,
+				EB476F20242C5C0D0035F4E6 /* CitiesListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +377,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "RG.AirQuality-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "AirQuality ObjC/AirQuality ObjC-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/AirQuality ObjC/Resources/AirQuality ObjC-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -312,7 +398,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "RG.AirQuality-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "AirQuality ObjC/AirQuality ObjC-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/AirQuality ObjC/Resources/AirQuality ObjC-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

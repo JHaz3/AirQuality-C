@@ -10,4 +10,25 @@
 
 @implementation HAZPollution
 
+- (instancetype)initWithAQI:(NSInteger)aqi
+{
+    self = [super init];
+    if (self)
+    {
+        _airQualityIndex = aqi;
+    }
+    return self;
+}
+
+@end
+
+@implementation HAZPollution (JSONConvertable)
+
+- (instancetype)initWithDictionary:(NSDictionary<NSString *,id> *)dictionary
+{
+    NSInteger aqi = [dictionary[@"aqius"] intValue];
+    
+    return [self initWithAQI:aqi];
+}
+
 @end

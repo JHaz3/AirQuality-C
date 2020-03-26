@@ -8,23 +8,62 @@
 
 import UIKit
 
-class CountriesListViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+class CountryListViewController: UIViewController {
+    
+    //MARK: - Propeerties
+    var countries: [String] = [] {
+        didSet {
+            updateTableView()
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    //MARK: - Outlets
+    @IBOutlet weak var tableView: UITableView!
+    
+    //MARK: - Lifecycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
+        HAZCityAirQualityController.fetchSupportedContries { (countries) in
+            if let countries = countries {
+                self.countries = countries
+            }
+        }
     }
-    */
+    
+    
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toStatesVC" {
+            guard let indexPath = tableView.indexPathForSelectedRow,
+                let destinationVC = segue.destination as? StatesListViewController
+                else { return }
+            
+            let selectedCountry = countries[indexPath.row]
+            destinationVC.country = selectedCountry
+        }
+    }
+    
+    //MARK: - Class Methods
+    func updateTableView() {
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
+}
 
+//MARK: - TableView DataSource and Delegate
+extension CountryListViewController : UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return countries.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "countryCell", for: indexPath)
+        let country = countries[indexPath.row]
+        cell.textLabel?.text = country
+        return cell
+    }
 }
