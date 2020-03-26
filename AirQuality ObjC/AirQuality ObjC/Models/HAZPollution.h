@@ -12,6 +12,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HAZPollution : NSObject
 
+@property(nonatomic, readonly) NSInteger airQualityIndex;
+
+-(instancetype)initWithAQI:(NSInteger)aqi;
+
+@end
+
+@interface HAZPollution (JSONConvertable)
+
+-(instancetype)initWithDictionary:(NSDictionary<NSString *, id> *)dictionary;
+
 @end
 
 NS_ASSUME_NONNULL_END
