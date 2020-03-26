@@ -1,5 +1,5 @@
 //
-//  HAZViewController.swift
+//  CountriesListViewController.swift
 //  AirQuality ObjC
 //
 //  Created by Jake Haslam on 3/25/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HAZViewController: UIViewController {
+class CountriesListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

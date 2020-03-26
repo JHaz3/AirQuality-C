@@ -1,13 +1,8 @@
 //
-//  AirQuality ObjC-Bridging-Header.h
-//  AirQuality ObjC
-//
-//  Created by Jake Haslam on 3/25/20.
-//  Copyright © 2020 RYAN GREENBURG. All rights reserved.
+//  Use this file to import your target's public headers that you would like to expose to Swift.
 //
 
-#ifndef AirQuality_ObjC_Bridging_Header_h
-#define AirQuality_ObjC_Bridging_Header_h
-
-
-#endif /* AirQuality_ObjC_Bridging_Header_h */
+#import "HAZCityAirQualityController.h"
+#import "HAZCityAirQuality.h"
+#import "HAZWeather.h"
+#import "HAZPollution.h"
